@@ -1,0 +1,20 @@
+/* ── Mobile helpers (appended) ──────────────────────────────── */
+@media (min-width: 769px) {
+  .show-mobile { display: none !important; }
+}
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
+
+/* Responsive page layouts */
+@media (max-width: 768px) {
+  /* SCurve + CashFlow: stack health panel above charts */
+  .sc-layout, .cf-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Dashboard summary: stack summary under health table */
+  .dash-bottom {
+    grid-template-columns: 1fr !important;
+  }
+}
